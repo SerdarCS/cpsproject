@@ -35,12 +35,12 @@ const int SERVO_RIGHT    = SERVO_FORWARD - 30; // scan right angle
 
 // ======================= Avoidance Tunables ===================
 const int OBSTACLE_CM       = 15;   // trigger distance for avoidance
-const int AVOID_BACK_MS     = 400;  // back off time
-const int AVOID_TURN_MS     = 700;  // pivot time toward chosen side
-const int AVOID_FORWARD_MS  = 1400;  // drive forward time after turning
+const int AVOID_BACK_MS     = 500;  // back off time
+const int AVOID_TURN_MS     = 500;  // pivot time toward chosen side
+const int AVOID_FORWARD_MS  = 1450;  // drive forward time after turning
 
 // Line re-acquisition (simple + tunable)
-const int REACQ_TURN_MS     = 2500;  // pivot into the OPPOSITE direction
+const int REACQ_TURN_MS     = 900;  // pivot into the OPPOSITE direction
 const unsigned long REACQ_MAX_MS = 3500; // give up after this many ms if no line
 
 Servo servo;
